@@ -25,4 +25,4 @@
 ### 1일차(25.06.18)
 | Title | Tag | Link |
 |------|------|------|
-| Accompanist Permissions in Jetpack Compose | `Android` | [🔗](notes/accompanist-permissions.md) |
+| Server-driven UI | `Android` | [🔗](notes/android/Server-driven%20UI.md) |
