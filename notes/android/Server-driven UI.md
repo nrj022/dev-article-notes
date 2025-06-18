@@ -7,7 +7,7 @@
 
 <br/>
 
-## 관련 문서
+## 관련 자료
 
 - 🧩 [Server-driven UI SDK on Android: how RevenueCat enables remote paywalls without app updates](https://www.revenuecat.com/blog/engineering/server-driven-android/)
 - 🧩 [클라이언트 배포 없이 UI를 바꾼다고? 에이닷 Server Driven UI 도입기](https://devocean.sk.com/blog/techBoardDetail.do?ID=167341&boardType=techBlog)
