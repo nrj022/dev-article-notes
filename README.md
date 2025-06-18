@@ -5,7 +5,7 @@
 
 🏷️ Tags: `Android`
 
-<br/> <br/>
+<br/> 
 
 ## 📝 Commit Message Convention
 
