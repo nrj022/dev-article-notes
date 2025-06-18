@@ -3,7 +3,7 @@
 개발 관련 아티클, 블로그 글 등을 읽고  
 요약하거나 메모처럼 정리해두는 저장소입니다.
 
-🏷️ Tags: `Android`, `Jetpack Compose`, `Performance`  
+🏷️ Tags: `Android`
 
 <br/> <br/>
 
