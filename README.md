@@ -3,7 +3,7 @@
 개발 관련 아티클, 블로그 글 등을 읽고  
 요약하거나 메모처럼 정리해두는 저장소입니다.
 
-🏷️ Tags: `Android`
+🏷️ Tags: `Android`, `Kotlin`
 
 <br/> 
 
@@ -26,3 +26,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Server-driven UI | `Android` | [🔗](notes/android/Server-driven%20UI.md) |
+
+### 2일차(25.06.20)
+| Title | Tag | Link |
+|------|------|------|
+| 함수에서 람다의 inline과 noinline, crossinline | `Kotlin` | [🔗](notes/android/함수에서%20람다의%20Inline과%20noInline%2C%20crossinline.md) |
