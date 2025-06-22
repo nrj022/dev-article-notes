@@ -9,7 +9,7 @@
 - 화면 유지용 modifier인 `keepScreenOn`이 추가됨
 
 ### View-based에서 Keep Screen On 구현
-방법 1. Activity에서 `FLAG_KEEP_SCREEN_ON` 설정
+방법 1. Activity에서 `FLAG_KEEP_SCREEN_ON` 설정<br/>
 방법 2. 레이아웃 XML에서 `android:keepScreenOn` 속성 설정
 
 ## 참고 자료
