@@ -36,3 +36,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | 안드로이드의 Keep Screen On과 Compose의 새로운 modifier | `Android` | [🔗](notes/android/안드로이드의%20Keep%20Screen%20On과%20Compose의%20새로운%20modifier.md) |
+
+### 4일차(25.06.24)
+| Title | Tag | Link |
+|------|------|------|
+| Jetpack Navigation 3 출시 | `Android` | [🔗](notes/android/Jetpack%20Navigation%203%20%EC%B6%9C%EC%8B%9C.md) |
