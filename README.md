@@ -41,3 +41,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Jetpack Navigation 3 출시 | `Android` | [🔗](notes/android/Jetpack%20Navigation%203%20%EC%B6%9C%EC%8B%9C.md) |
+
+### 5일차(25.06.25)
+| Title | Tag | Link |
+|------|------|------|
+| Compose 1.8.0의 Autofill | `Android` | [🔗](notes/android/Compose%201.8.0의%20Autofill.md) |
