@@ -46,3 +46,9 @@
 | Title | Tag | Link |
 |------|------|------|
 | Compose 1.8.0의 Autofill | `Android` | [🔗](notes/android/Compose%201.8.0의%20Autofill.md) |
+
+
+### 6일차(25.06.26)
+| Title | Tag | Link |
+|------|------|------|
+| runCatching과 Result를 활용한 우아한 Error Handling | `Kotlin` | [🔗](notes/kotlin/runCatching과%20Result를%20활용한%20우아한%20Error%20Handling.md) |
