@@ -1,4 +1,4 @@
-## Side Effects in Android
+## Side Effects in Compose
 선언형 UI 방식인 Jetpack Compose에서 데이터베이스 업데이트, 로그 기록, 네트워크 요청 등의 UI 계층 밖에서 일어나는 변화나 작업을 처리하기 위해 사용하는 메커니즘
 <br><br>
 예를 들어, API 호출이 필요할 때 컴포저블 함수 내에서 그냥 코드를 작성하면 API 호출은 UI가 Recomposition(재구성)될 때마다 매번 실행된다. 이런 경우 Side Effect를 사용하면, UI 계층과 분리되어 통제된 방식으로 작업을 수행할 수 있다.
