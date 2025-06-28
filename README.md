@@ -52,3 +52,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | runCatching과 Result를 활용한 우아한 Error Handling | `Kotlin` | [🔗](notes/kotlin/runCatching과%20Result를%20활용한%20우아한%20Error%20Handling.md) |
+
+### 7일차(25.06.28)
+| Title | Tag | Link |
+|------|------|------|
+| Side Effects in Compose | `Android` | [🔗](notes/android/Side%20Effects%20in%20Compose.md) |
