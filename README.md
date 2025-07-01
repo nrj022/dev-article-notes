@@ -57,3 +57,15 @@
 | Title | Tag | Link |
 |------|------|------|
 | Side Effects in Compose | `Android` | [🔗](notes/android/Side%20Effects%20in%20Compose.md) |
+
+### 8일차(25.06.30)
+| Title | Tag | Link |
+|------|------|------|
+| Side Effects in Compose (추가) | `Android` | [🔗](notes/android/Side%20Effects%20in%20Compose.md) |
+
+
+### 9일차(25.07.01)
+| Title | Tag | Link |
+|------|------|------|
+| ConstraintLayout in Jetpack Compose | `Android` | [🔗](notes/android/ConstraintLayout%20in%20Jetpack%20Compose.md) |
+
