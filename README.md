@@ -63,9 +63,13 @@
 |------|------|------|
 | Side Effects in Compose (추가) | `Android` | [🔗](notes/android/Side%20Effects%20in%20Compose.md) |
 
-
 ### 9일차(25.07.01)
 | Title | Tag | Link |
 |------|------|------|
 | ConstraintLayout in Jetpack Compose | `Android` | [🔗](notes/android/ConstraintLayout%20in%20Jetpack%20Compose.md) |
+
+### 10일차(25.07.04)
+| Title | Tag | Link |
+|------|------|------|
+| Navigation in Compose 개념과 구현 시 고려사항 | `Android` | [🔗](notes/android/Navigation%20in%20Compose%20%EA%B0%9C%EB%85%90%EA%B3%BC%20%EA%B5%AC%ED%98%84%20%EC%8B%9C%20%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD.md) |
 
