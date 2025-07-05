@@ -30,7 +30,7 @@
 ### 2일차(25.06.20)
 | Title | Tag | Link |
 |------|------|------|
-| 함수에서 람다의 inline과 noinline, crossinline | `Kotlin` | [🔗](notes/android/함수에서%20람다의%20Inline과%20noInline%2C%20crossinline.md) |
+| 함수에서 람다의 inline과 noinline, crossinline | `Kotlin` | [🔗](notes/kotlin/%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C%20%EB%9E%8C%EB%8B%A4%EC%9D%98%20Inline%EA%B3%BC%20noInline%2C%20crossinline.md) |
 
 ### 3일차(25.06.22)
 | Title | Tag | Link |
