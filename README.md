@@ -83,4 +83,7 @@
 |------|------|------|
 | Jetpack Navigation 3 출시 (보충) | `Android` | [🔗](notes/android/Jetpack%20Navigation%203%20%EC%B6%9C%EC%8B%9C.md) |
 
-
+### 13일차(25.07.09)
+| Title | Tag | Link |
+|------|------|------|
+| 안드로이드 앱의 용량을 최적화 해보자 | `Android` | [🔗](notes/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%95%B1%EC%9D%98%20%EC%9A%A9%EB%9F%89%EC%9D%84%20%EC%B5%9C%EC%A0%81%ED%99%94%20%ED%95%B4%EB%B3%B4%EC%9E%90.md) |
