@@ -92,3 +92,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | ViewModel의 StateFlow | `Kotlin` | [🔗](notes/kotlin/ViewModel%EC%9D%98%20StateFlow.md) |
+
+### 15일차(25.07.15)
+| Title | Tag | Link |
+|------|------|------|
+| Compose에서 SnapshotFlow 또는 CollectAsState를 선택하는 경우 | `Android` | [🔗](notes/android/Compose%EC%97%90%EC%84%9C%20SnapshotFlow%20%EB%98%90%EB%8A%94%20collectAsState%20%EB%A5%BC%20%EC%84%A0%ED%83%9D%ED%95%98%EB%8A%94%20%EA%B2%BD%EC%9A%B0.md) |
