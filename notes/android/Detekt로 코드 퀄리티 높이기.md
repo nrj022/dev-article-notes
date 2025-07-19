@@ -40,4 +40,10 @@ Android Weekly #683의 **Improve Your Kotlin Code Quality with Detekt in Android
 
 ### 경고를 무시하고 싶을 때는?
 `@Suppress` annotation을 사용하자. `@Suppress("MagicNumber")` 이런 식으로 특정 경고를 무시할 수 있고, 
-원한다면 `@Suppress("MagicNumber", "FunctionNaming")` 처럼 두 가지 이상의 룰도 무시 가능하다.
+원한다면 `@Suppress("MagicNumber", "FunctionNaming")` 처럼 두 가지 이상의 룰도 무시 가능하다.  
+
+<br>
+
+## 출처
+- 🧩 [Improve Your Kotlin Code Quality with Detekt in Android
+](https://medium.com/codetodeploy/improve-your-kotlin-code-quality-with-detekt-in-android-135615ab8caf)
