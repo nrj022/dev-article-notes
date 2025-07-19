@@ -97,3 +97,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Compose에서 SnapshotFlow 또는 CollectAsState를 선택하는 경우 | `Android` | [🔗](notes/android/Compose%EC%97%90%EC%84%9C%20SnapshotFlow%20%EB%98%90%EB%8A%94%20collectAsState%20%EB%A5%BC%20%EC%84%A0%ED%83%9D%ED%95%98%EB%8A%94%20%EA%B2%BD%EC%9A%B0.md) |
+
+### 16일차(25.07.19)
+| Title | Tag | Link |
+|------|------|------|
+| Detekt로 코드 퀄리티 높이기 | `Android` | [🔗](notes/android/Detekt%EB%A1%9C%20%EC%BD%94%EB%93%9C%20%ED%80%84%EB%A6%AC%ED%8B%B0%20%EB%86%92%EC%9D%B4%EA%B8%B0.md) |
