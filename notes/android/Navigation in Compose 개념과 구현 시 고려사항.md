@@ -1,5 +1,9 @@
 ## Jetpack Compose Navigation 라이브러리
 
+공식 문서 **Navigation in Compose**를 읽고 정리한 글이다.  
+
+*아래 **구현 시 고려사항**을 읽고 진행하고 있는 'RentIt'프로젝트에서는 화면별로 뷰모델을 분리해 각 책임을 명확하게 하도록 리팩토링했다.
+
 ### 기본적인 Navigation 문제를 해결
 - 화면 이동 과정에서 Type-safe로 데이터를 전달한다.
   
@@ -35,5 +39,5 @@
 - 이미지 오브젝트를 전달하지 말 것. URI나 파일 이름을 전달해 목적지에서 이미지를 로드할 것.
 - 뷰모델이나 상태를 전달하지 말 것. 화면이 작동하는 데 필요한 정보만 전달할 것.
 
-## 참고 자료
+## 출처
 - 🧩 [Navigation in Compose](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-navigation.html)
