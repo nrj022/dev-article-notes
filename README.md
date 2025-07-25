@@ -102,3 +102,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Detekt로 코드 퀄리티 높이기 | `Android` | [🔗](notes/android/Detekt%EB%A1%9C%20%EC%BD%94%EB%93%9C%20%ED%80%84%EB%A6%AC%ED%8B%B0%20%EB%86%92%EC%9D%B4%EA%B8%B0.md) |
+
+### 17일차(25.07.25)
+| Title | Tag | Link |
+|------|------|------|
+| Compose 안정성을 위한 팁 | `Android` | [🔗](notes/android/Compose%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%ED%8C%81.md) |
