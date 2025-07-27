@@ -54,18 +54,16 @@ class Hero(
 이 `Hero` 클래스의 프로퍼티는 변경 가능하지만, `MutableState<T>` 타입은 변경 시 Recomposition을 유도하므로 이 클래스는 **stable**하다.
 
 ### 타입의 안정성을 확인하는 방법
-- Compose의 Compiler Reports를 확인하자.
+- Compose의 **Compiler Reports**를 확인하자.
     
   `build.gradle`에서 3가지 report를 생성하도록 설정할 수 있다. (아래 출처에서 설정 방법을 참고)  
-  3가지 report 중 우리는 클래스의 안정성을 확인할 수 있는 `modulename-classes.txt`를 사용한다.  
+  3가지 report 중 우리는 **클래스의 안정성을 확인할 수 있는 `modulename-classes.txt`를 사용**한다. (_이래서 프로젝트를 모듈화 하는 걸지도 모르겠다. 코드를 여러 모듈로 나누는게 확실히 검증하는데 용이할 것 같다._)  
 
-  이 파일에서 우리는
+  이 파일을 통해 우리는 다음을 확인할 수 있다:
   1. class가 stable 한지
   2. 어떤 프로터피가 stable/unstable한지
-  3. 무엇이 안정성의 원인이 되는지  
-  를 확인할 수 있다.
-
-
+  3. 무엇이 안정성의 원인이 되는지
+   
 
 **+ 내용 추가 예정**
 
