@@ -55,6 +55,16 @@ class Hero(
 
 ### 타입의 안정성을 확인하는 방법
 - Compose의 Compiler Reports를 확인하자.
+    
+  `build.gradle`에서 3가지 report를 생성하도록 설정할 수 있다. (아래 출처에서 설정 방법을 참고)  
+  3가지 report 중 우리는 클래스의 안정성을 확인할 수 있는 `modulename-classes.txt`를 사용한다.  
+
+  이 파일에서 우리는
+  1. class가 stable 한지
+  2. 어떤 프로터피가 stable/unstable한지
+  3. 무엇이 안정성의 원인이 되는지  
+  를 확인할 수 있다.
+
 
 
 **+ 내용 추가 예정**
