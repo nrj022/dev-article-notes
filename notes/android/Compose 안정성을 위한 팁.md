@@ -56,16 +56,86 @@ class Hero(
 ### 타입의 안정성을 확인하는 방법
 - Compose의 **Compiler Reports**를 확인하자.
     
-  `build.gradle`에서 3가지 report를 생성하도록 설정할 수 있다. (아래 출처에서 설정 방법을 참고)  
+  `build.gradle`에서 3가지 report를 생성하도록 설정할 수 있다. (아래 출처의 공식 문서에서 설정 방법을 참고)  
   3가지 report 중 우리는 **클래스의 안정성을 확인할 수 있는 `modulename-classes.txt`를 사용**한다. (_이래서 프로젝트를 모듈화 하는 걸지도 모르겠다. 코드를 여러 모듈로 나누는게 확실히 검증하는데 용이할 것 같다._)  
 
   이 파일을 통해 우리는 다음을 확인할 수 있다:
   1. class가 stable 한지
   2. 어떤 프로터피가 stable/unstable한지
   3. 무엇이 안정성의 원인이 되는지
-   
 
+  Compose Compiler를 사용해 **현재 진행 중인 프로젝트 모듈의 리포트를 확인**해보았다. 
+   ```
+  stable class DatePicker {
+  <runtime stability> = Stable
+  }
+  stable class DateRangePicker {
+    <runtime stability> = Stable
+  }
+  unstable class PeriodDataModel {
+    unstable val startDate: LocalDate
+    unstable val endDate: LocalDate
+    <runtime stability> = Unstable
+  }
+  ```
+  여기서 왜 다음의 `PeriodDataModel`은 불안정할까?
+  ```
+  data class PeriodDataModel (
+    val startDate: LocalDate,
+    val endDate: LocalDate
+  )
+  ```
+  
+  필드들이 모두 `val`프로퍼티를 사용함에도 Compose가 이 데이터클래스가 불안정하다고 판단했다.
+  
+  이건 ChatGPT에게 물어본 결과, **Compose가 외부(Java)의 타입에 대해 보수적으로 보기 때문**이라고 한다. `LocalDate` 자체가 mutable이 아님에도 Compose 입장에서는 **안정성 확인이 불가능하여 unstable하게 간주**한다고 한다. 이렇게 되면 Compose가 불필요한 Recomposition 발생 가능성이 있다.
+
+  이런 경우, @Immutable 을 사용해 컴파일러에게 변경되지 않는 클래스임을 알려줄 수 있다.
+  ```
+  @Immutable
+  data class PeriodDataModel(
+      val startDate: LocalDate,
+      val endDate: LocalDate
+  )
+  ```
+  하지만 이번엔 클래스는 stable 하지만 그 안의 필드가 unstable이라고 판단했다. 여기도 여전히 불필요한 Recomposition이 발생 가능하다.
+  ```
+  stable class PeriodDataModel {
+    unstable val startDate: LocalDate
+    unstable val endDate: LocalDate
+  }
+  ```
+
+  해결책은, 아래와 같이 LocalDate를 모두 감싸거나,
+  ```
+  @Immutable
+  data class ImmutableLocalDate(val value: LocalDate)
+  
+  @Immutable
+  data class PeriodDataModel(
+      val startDate: ImmutableLocalDate,
+      val endDate: ImmutableLocalDate
+  )
+  ```
+  타입을 원시(Primitive) 타입으로 변경하는것이다.
+  ```
+  data class PeriodDataModel (
+    val startDate: String,
+    val endDate: String
+  )
+  ```
+  두 번째 방법을 사용해 코드를 수정해보니, stable한 클래스를 얻었다.
+```
+  stable class PeriodDataModel {
+    stable val startDate: String
+    stable val endDate: String
+    <runtime stability> = Stable
+  }
+```
+  만약 성능을 예민하게 고려한다면 이런 부분을 신경써서 코드를 작성하면 좋을 것 같다.
+  
 **+ 내용 추가 예정**
 
 ## 출처
 - 🧩[Compose Stability tips and tricks](https://leedwon.github.io/posts/Compose-stability-tips-and-tricks/#stability-in-a-nutshell)
+- 🧩[Compose Compiler 관련 공식 문서](https://developer.android.com/develop/ui/compose/compiler)
