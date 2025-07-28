@@ -107,3 +107,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Compose 안정성을 위한 팁 | `Android` | [🔗](notes/android/Compose%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%ED%8C%81.md) |
+
+### 18일차(25.07.28)
+| Title | Tag | Link |
+|------|------|------|
+| Compose 안정성을 위한 팁 (추가) | `Android` | [🔗](notes/android/Compose%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%ED%8C%81.md) |
