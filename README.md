@@ -112,3 +112,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Compose 안정성을 위한 팁 (추가) | `Android` | [🔗](notes/android/Compose%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EC%9C%84%ED%95%9C%20%ED%8C%81.md) |
+
+### 19일차(25.08.04)
+| Title | Tag | Link |
+|------|------|------|
+| Jetpack Compose에 추가된 텍스트 처리 | `Android` | [🔗](notes/android/Jetpack%20Compose%EC%97%90%20%EC%B6%94%EA%B0%80%EB%90%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B2%98%EB%A6%AC.md) |
