@@ -117,3 +117,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | Jetpack Compose에 추가된 텍스트 처리 | `Android` | [🔗](notes/android/Jetpack%20Compose%EC%97%90%20%EC%B6%94%EA%B0%80%EB%90%9C%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B2%98%EB%A6%AC.md) |
+
+### 20일차(25.08.05)
+| Title | Tag | Link |
+|------|------|------|
+| 스케일이 큰 앱에서 자주 발생하는 Compose Mistakes | `Android` | [🔗](notes/android/%EC%8A%A4%EC%BC%80%EC%9D%BC%EC%9D%B4%20%ED%81%B0%20%EC%95%B1%EC%97%90%EC%84%9C%20%EC%9E%90%EC%A3%BC%20%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94%20Compose%20Mistakes.md) |
