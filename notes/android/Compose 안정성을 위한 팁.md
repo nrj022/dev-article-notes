@@ -1,6 +1,6 @@
 ## Compose 안정성을 위한 팁
 
-Android Weekly #684의 'Compose stability tips and tricks'를 읽고 정리한 글이다.
+Android Weekly #684의 'Compose stability tips and tricks'를 읽고 정리한 글이다. (+ 실습)
 
 ### 공식 문서가 정의한 Stable 타입은 ?
 **1. 변하지 않는 불변 타입 (Immutable)  
@@ -132,9 +132,8 @@ class Hero(
     <runtime stability> = Stable
   }
 ```
-  만약 성능을 예민하게 고려한다면 이런 부분을 신경써서 코드를 작성하면 좋을 것 같다.
-  
-**+ 내용 추가 예정**
+  성능을 예민하게 고려해야한다면 이런 부분을 신경써서 코드를 작성하면 좋을 것 같다.
+
 
 ## 출처
 - 🧩[Compose Stability tips and tricks](https://leedwon.github.io/posts/Compose-stability-tips-and-tricks/#stability-in-a-nutshell)
