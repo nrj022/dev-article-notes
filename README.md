@@ -122,3 +122,8 @@
 | Title | Tag | Link |
 |------|------|------|
 | 스케일이 큰 앱에서 자주 발생하는 Compose Mistakes | `Android` | [🔗](notes/android/%EC%8A%A4%EC%BC%80%EC%9D%BC%EC%9D%B4%20%ED%81%B0%20%EC%95%B1%EC%97%90%EC%84%9C%20%EC%9E%90%EC%A3%BC%20%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94%20Compose%20Mistakes.md) |
+
+### 21일차(25.08.06)
+| Title | Tag | Link |
+|------|------|------|
+| 진동으로 전하는 피드백 | `Android` | [🔗](notes/android/%EC%A7%84%EB%8F%99%EC%9C%BC%EB%A1%9C%20%EC%A0%84%ED%95%98%EB%8A%94%20%ED%94%BC%EB%93%9C%EB%B0%B1.md) |
