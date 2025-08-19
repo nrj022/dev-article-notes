@@ -1,4 +1,4 @@
-## suspending 함수 콜백으로 전환하기
+## flow와 suspending 함수를 콜백으로 전환하기
 
 Android Weekly #688 **"Suspending functions or flows into callbacks"** 를 읽고 작성하는 글이다.
 
