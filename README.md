@@ -22,6 +22,11 @@
 
 ## 📂 Notes
 
+### 26일차(25.09.03)
+| Title | Tag | Link |
+|------|------|------|
+| 구글의 Android 업데이트 역사 | `Android` | [🔗](notes/android/%EA%B5%AC%EA%B8%80%EC%9D%98%20Android%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%20%EC%97%AD%EC%82%AC.md) |
+
 ### 25일차(25.08.19)
 | Title | Tag | Link |
 |------|------|------|
