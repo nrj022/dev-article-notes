@@ -22,6 +22,11 @@
 
 ## 📂 Notes
 
+### 27일차(25.09.18)
+| Title | Tag | Link |
+|------|------|------|
+| Paging을 사용한 Offline-First 방식 | `Android` | [🔗](notes/android/Paging을%20사용한%20Offline-First%20방식.md) |
+
 ### 26일차(25.09.03)
 | Title | Tag | Link |
 |------|------|------|
