@@ -40,7 +40,7 @@
 ### 24일차(25.08.12)
 | Title | Tag | Link |
 |------|------|------|
-| 캡슐화를 위해서 항상 asStateFlow를 사용해야할까?  | `Kotlin` | [🔗](notes/kotlin/%EC%BA%A1%EC%8A%90%ED%99%94%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%ED%95%AD%EC%83%81%20asStateFlow%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%ED%95%A0%EA%B9%8C%3F.md) |
+| 캡슐화를 위해서 항상 asStateFlow를 사용해야할까?  | `Kotlin` | [🔗](notes/kotlin/%EC%BA%A1%EC%8A%90%ED%99%94%EB%A5%BC%20%EC%9C%84%ED%95%B4%20%ED%95%AD%EC%83%81%20asStateFlow%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%ED%95%A0%EA%B9%8C.md) |
 
 ### 23일차(25.08.10)
 | Title | Tag | Link |
