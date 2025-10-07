@@ -64,7 +64,7 @@ fun <T> NavController.navigateBackWithResult(value: T) {
 이 함수는 `previousBackStackEntry`를 사용해 이전 화면 `BackStackEntry` 객체의 savedStateHandle 에 접근하여 데이터를 저장하고, `navigateUp()`하여 상위 화면으로 이동, 현재 화면은 Pop한다. 
 (여기서 왜 바로 이전 화면으로의 이동을 보장하는 `popBackStack()`이 아닌 `navigateUp()`을 선택했는지 약간 의문이다.)  
 
-**2. `navigateBackWithSerializableResult`: 데이터를 받아 Json 문자열로 인코딩**
+**2. `navigateBackWithSerializableResult`: Json 문자열로 인코딩**
 ```
 inline fun <reified T> NavController.navigateBackWithSerializableResult(value: T) {
     navigateBackWithResult(Json.encodeToString(value))
@@ -85,7 +85,7 @@ public inline fun <reified T> Json.encodeToString(value: T): String {
     return encodeToString(serializer, value)
 }
 ```
-여기서 집중할 부분은, encodeToString 타입은 value의 타입 T를 가지고 해당 타입의 Serializer를 찾아 직렬화를 수행한다는 것이다.  
+여기서 집중할 부분은, encodeToString은 value의 타입 T를 가지고 해당 타입의 Serializer를 찾아 직렬화를 수행한다는 것이다.  
 그렇기 때문에, `navigateBackWithResult(Json.encodeToString(value))` 에서도 value의 타입이 잘 전달되는게 중요하다.  
 
 하지만, 그냥 <T> 제네릭 타입은 런타임에 타입을 기억하지 못한다. 즉 `Json.encodeToString(value)`로 value를 전달할 때는 value의 타입을 알지 못한다는 것이다. 
@@ -93,4 +93,41 @@ public inline fun <reified T> Json.encodeToString(value: T): String {
 
 결국, `navigateBackWithSerializableResult` 함수는 `saveStateHandle`에 직접 저장할 수 없는 객체 타입을 Json으로 인코딩해 `navigateBackWithResult`함수에 String으로 전달하는 역할이다.  
 
+**3. `navigateForSerializableResult`: 결과 디코딩**
+```
+suspend inline fun <reified T> NavController.navigateForSerializableResult(route: Any): T? {
+    val result: String = navigateForResult(route) ?: return null
+    return Json.decodeFromString(result)
+}
+```
+아래서 설명할 `navigateForResult` 함수를 통해 받은 결과를 디코딩하는 함수다. 여기도 역시 `reified`를 사용해 
+Json 문자열을 사용자가 인코딩할 때 사용한 타입으로 변환할 수 있다.
+
+**4. `navigateForResult`**
+```
+suspend fun <T> NavController.navigateForResult(route: Any): T? =
+    suspendCancellableCoroutine { continuation ->
+        val currentNavEntry = currentBackStackEntry
+            ?: throw IllegalStateException("No current back stack entry found")
+
+        navigate(route)
+
+        val lifecycleObserver = object : LifecycleEventObserver {
+            override fun onStateChanged(source: LifecycleOwner, event: Lifecycle.Event) {
+                if (event == Lifecycle.Event.ON_START) {
+                    continuation.resume(currentNavEntry.savedStateHandle[RESULT_KEY])
+                    currentNavEntry.savedStateHandle.remove<T>(RESULT_KEY)
+                    currentNavEntry.lifecycle.removeObserver(this)
+                }
+            }
+        }
+
+        currentNavEntry.lifecycle.addObserver(lifecycleObserver)
+
+        continuation.invokeOnCancellation {
+            currentNavEntry.savedStateHandle.remove<T>(RESULT_KEY)
+            currentNavEntry.lifecycle.removeObserver(lifecycleObserver)
+        }
+    }
+```
 **+ 내용 추가 예정**
