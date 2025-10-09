@@ -22,10 +22,15 @@
 
 ## 📂 Notes
 
+### 29일차(25.10.09)
+| Title | Tag | Link |
+|------|------|------|
+| Navigate back with result 코드 살펴보기 (완성) | `Android` | [🔗](notes/android/Navigate%20back%20with%20result%20%EC%BD%94%EB%93%9C%20%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0.md) |
+
 ### 28일차(25.10.05)
 | Title | Tag | Link |
 |------|------|------|
-| Navigate back with result 코드 살펴보기 (미완) | `Android` | [🔗](notes/android/Navigate%20back%20with%20result%20%EC%BD%94%EB%93%9C%20%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0.md) |
+| Navigate back with result 코드 살펴보기 | `Android` | [🔗](notes/android/Navigate%20back%20with%20result%20%EC%BD%94%EB%93%9C%20%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0.md) |
 
 ### 27일차(25.09.18)
 | Title | Tag | Link |
