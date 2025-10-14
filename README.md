@@ -22,6 +22,11 @@
 
 ## 📂 Notes
 
+### 30일차(25.10.14)
+| Title | Tag | Link |
+|------|------|------|
+| Android에서 Gradle | `Android` | [🔗](https://github.com/nrj022/dev-article-notes/blob/main/notes/android/Android%EC%97%90%EC%84%9C%20Gradle.md) |
+
 ### 29일차(25.10.09)
 | Title | Tag | Link |
 |------|------|------|
