@@ -22,10 +22,15 @@
 
 ## 📂 Notes
 
+### 31일차(25.10.20)
+| Title | Tag | Link |
+|------|------|------|
+| Flow의 장점과 SafeCollector | `Kotlin` | [🔗](notes/kotlin/Flow%EC%9D%98%20%EC%9E%A5%EC%A0%90%EA%B3%BC%20SafeCollector.md) |
+
 ### 30일차(25.10.14)
 | Title | Tag | Link |
 |------|------|------|
-| Android에서 Gradle | `Android` | [🔗](https://github.com/nrj022/dev-article-notes/blob/main/notes/android/Android%EC%97%90%EC%84%9C%20Gradle.md) |
+| Android에서 Gradle (미완) | `Android` | [🔗](notes/android/Android%EC%97%90%EC%84%9C%20Gradle.md) |
 
 ### 29일차(25.10.09)
 | Title | Tag | Link |
