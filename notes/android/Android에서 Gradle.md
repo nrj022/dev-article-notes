@@ -118,4 +118,45 @@
 - 모듈에서 필요한 라이브러리 선언  
 - Gradle이 자동으로 다운로드하고 빌드에 포함시킴
 
-**+ 내용 추가 예정**
+### 4. `setting.gradle.kts`
+전체 프로젝트에 대한 설정을 담당
+
+```
+/** 프로젝트를 빌드하는데 필요한 플러그인(안드로이드, 코틀린 등)을 어디서 다운로드할지 설정하는 공간 */
+pluginManagement {
+    // 플러그인 저장소 목록
+    repositories {
+        google {
+            // 안드로이드, 구글, AndroidX 관련 플러그인만 찾도록하여 서치를 최적화
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        // 자바/코틀린 라이브러리 저장소
+        mavenCentral()
+        // Gradle 공식 플러그인 포털
+        gradlePluginPortal()
+    }
+}
+```
+```
+/** 앱 코드에서 직접 사용하는 라이브러리를 어디서 다운로드할지 설정하는 공간 */
+dependencyResolutionManagement {
+    // 모든 라이브러리 저장소 선언은 반드시 이 setting.gradle 파일 안에서만 하도록 강제하여 하위 모듈에서 선언 시 빌드가 실패함
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    // 라이브러리 저장소 목록
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+```
+
+```
+// 프로젝트 최상위 이름
+rootProject.name = "My Application"
+// 프로젝트 빌드에서 포함할 모듈
+include(":app")
+```
