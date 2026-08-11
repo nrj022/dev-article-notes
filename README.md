@@ -22,6 +22,11 @@
 
 ## 📂 Notes
 
+### 33일차(26.8.11)
+| Title | Tag | Link |
+|------|------|------|
+| 스냅샷 테스트 매트릭스를 구현하는 두 가지 방법 (미완) | `Android` | [🔗](notes/android/%EC%8A%A4%EB%83%85%EC%83%B7%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EB%A9%94%ED%8A%B8%EB%A6%AD%EC%8A%A4%EB%A5%BC%20%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94%20%EB%91%90%EA%B0%80%EC%A7%80%20%EB%B0%A9%EB%B2%95.md) |
+
 ### 32일차(25.11.06)
 | Title | Tag | Link |
 |------|------|------|
