@@ -22,6 +22,11 @@
 
 ## 📂 Notes
 
+### 35일차(26.8.13)
+| Title | Tag | Link |
+|------|------|------|
+| Jetpack Compose로 가장 편리해진 5가지 | `Android` | [🔗](notes/android/Jetpack%20Compose%EB%A1%9C%20%EA%B0%80%EC%9E%A5%20%ED%8E%B8%EB%A6%AC%ED%95%B4%EC%A7%84%205%EA%B0%80%EC%A7%80.md) |
+
 ### 34일차(26.8.12)
 | Title | Tag | Link |
 |------|------|------|
