@@ -25,7 +25,7 @@
 ### 36일차(26.8.14)
 | Title | Tag | Link |
 |------|------|------|
-| SSM을 믿고 Compose의 안정성을 무시하지 말자 | `Android` | [🔗](notes/android/SSM%EC%9D%84%20%EB%AF%BF%EA%B3%A0%20Compose%EC%9D%98%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EB%AC%B4%EC%8B%9C%ED%95%98%EC%A7%80%20%EB%A7%90%EC%9E%90.md) |
+| SSM을 믿고 Compose의 안정성을 무시하지 말자 (미완) | `Android` | [🔗](notes/android/SSM%EC%9D%84%20%EB%AF%BF%EA%B3%A0%20Compose%EC%9D%98%20%EC%95%88%EC%A0%95%EC%84%B1%EC%9D%84%20%EB%AC%B4%EC%8B%9C%ED%95%98%EC%A7%80%20%EB%A7%90%EC%9E%90.md) |
 
 ### 35일차(26.8.13)
 | Title | Tag | Link |
