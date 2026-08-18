@@ -56,7 +56,7 @@ data class UserState(
 
 ### 결론
 - Strong Skipping은 안정망이지만 완전한 해결책은 아니다: 컴포저블을 건너뛸 수 있게 만들지만 불안정 파라미터는 참조 동일성(===) 검사로 대체된다.
-- List<T>는 여전히 불안정하다: `copy(), `map {}`, `filter {}`, or `toList()`을 통한 변화는 주소 참조를 변경시키고 state emission마다 재구성을 강제한다.
+- List<T>는 여전히 불안정하다: `copy()`, `map {}`, `filter {}`, or `toList()`을 통한 변화는 주소 참조를 변경시키고 state emission마다 재구성을 강제한다.
 - 안정성 주석과 ImmutableList는 여전히 중요하다: kotlinx-collections-immutable(ImmutableList<T>)을 사용하거나 @Immutable / @Stable (리스트의 크기가 작을 경우)로 사용자 정의 상태 클래스에 주석을 달아 진정한 구조적(.equals()) Skipping을 활성화하자.
 
 ## 출처
